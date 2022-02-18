@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@600&display=swap");
+
+:root {
+  --primario: rgba(249, 181, 58, 1);
+  --blanco: rgba(255, 255, 255, 1);
+  --rellenos: rgba(31, 31, 33, 1);
+  --bordes: rgba(61, 61, 61, 1);
+  --fondo: rgba(23, 23, 24, 1);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--fondo);
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 3rem;
+}
+
+.message__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  background-color: var(--rellenos);
+  border: 1.5px solid var(--bordes);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.message__card::after {
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(249, 181, 58, 0.2) 0%,
+    rgba(255, 89, 168, 0.2) 100%
+  );
+  position: absolute;
+  background-position: center;
+  height: 40%;
+  width: 40%;
+  z-index: -1;
+  filter: blur(250px);
+}
+
+.message__card h1 {
+  font-size: 3.75rem;
+  font-weight: 600;
+  letter-spacing: -0.03125rem;
+  color: var(--primario);
+}
+
+.message__card p {
+  max-width: 27.875rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.009375rem;
+  text-align: center;
+  color: var(--blanco);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 2.33rem;
+  transition: 0.3s;
+}
+
+.btn--primary {
+  background-color: var(--primario);
+}
+
+.btn--primary a:hover {
+  color: var(--fondo);
+}
+
+.btn--primary a {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  color: var(--blanco);
+  text-decoration: none;
+  transition: 0.3s;
+}

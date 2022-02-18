@@ -9,55 +9,59 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/svgs/favicon.svg">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/mobile.css" media="(min-width: 320px) and (max-width: 768px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px) and (max-width: 1024px)">
+    <link rel="icon" type="image/x-icon" href="/assets/svgs/favicon.svg" />
     <title>Rodolfo's Portfolio</title>
   </head>
   <body>
-    <nav
-      class="navbar fixed-top navbar-expand-md bg-faded justify-content-center"
-    >
-      <div class="container">
-        <div class="logo d-flex me-auto">&ltRM/&gt</div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsingNavbar3"
-        >
-          <img
-            src="./assets/svgs/menu.svg"
-            alt="menu"
-            class="navbar-toggler-icon"
-          />
-        </button>
-        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-          <ul
-            class="links navbar-nav w-100 justify-content-center align-items-center"
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand-md bg-faded justify-content-center"
+      >
+        <div class="container">
+          <div class="logo d-flex me-auto">&ltRM/&gt</div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsingNavbar3"
           >
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Acerca de mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Proyectos</a>
-            </li>
-          </ul>
-          <div class="nav navbar-nav ms-auto justify-content-end">
-            <div class="primary-btn"><a href="#contact">Contáctame</a></div>
+            <img
+              src="./assets/svgs/menu.svg"
+              alt="menu"
+              class="navbar-toggler-icon"
+            />
+          </button>
+          <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul
+              class="links navbar-nav w-100 justify-content-center align-items-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Acerca de mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Proyectos</a>
+              </li>
+            </ul>
+            <div class="nav navbar-nav ms-auto justify-content-end">
+              <div class="btn btn--primary"><a href="#contact">Contáctame</a></div>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <div class="front-page">
-      <img src="./assets/svgs/logo.svg" alt="" />
-    </div>
-    <div class="contenedor">
-      <section id="home">
-        <div class="hero">
-          <div class="text">
+      </nav>
+    </header>
+    <section class="hero">
+      <img src="./assets/svgs/logo.svg" alt="RM logo" />
+    </section>
+    <main>
+      <section class="home" id="home">
+        <div class="home__content">
+          <div class="home__text">
             <h1>Soy <span>Rodolfo Meroi</span><br />Desarrollador Web</h1>
             <p>
               Este es mi portafolio, diseñado con HTML y CSS puro. Aquí puede
@@ -66,11 +70,11 @@
               ¡Espero que le guste!
             </p>
           </div>
-          <div class="buttons">
-            <div class="primary-btn">
+          <div class="home__buttons">
+            <div class="btn btn--primary">
               <a href="#projects">Ver proyectos</a>
             </div>
-            <div class="secondary-btn">
+            <div class="btn btn--secondary">
               <img src="./assets/svgs/download.svg" alt="" /><a href="./assets/pdfs/Currículum-RodolfoMeroi.pdf" download
                 >Descargar CV</a
               >
@@ -78,12 +82,12 @@
           </div>
         </div>
       </section>
-      <section id="about">
-        <div class="about-card">
-          <img src="./assets/svgs/personal-pic.svg" alt="/" />
-          <div class="text">
-            <h1>Acerca de mi</h1>
-            <p>
+      <section class="about" id="about">
+        <div class="about__card">
+          <img src="./assets/svgs/personal-pic.svg" alt="Una foto mia" />
+          <div class="about__card__text">
+            <p class="about__card__title">Acerca de mi</h1>
+            <p class="about__card__description">
               Hola! Mi nombre es Rodolfo Meroi (Rodo para los amigos), tengo 21
               años y actualmente vivo en Santa Fe, Argentina. Me 
               encuentro estudiando la carrera de Licenciatura en
@@ -101,131 +105,131 @@
           </div>
         </div>
       </section>
-      <section id="studies">
-        <div class="title">Mis estudios</div>
-        <div class="studies-cards">
-          <div class="study-card">
+      <section class="studies" id="studies">
+        <div class="studies__title">Mis estudios</div>
+        <div class="studies__cards">
+          <article class="studies__card">
             <img src="./assets/svgs/2018.svg" alt="2018">
-            <h1>Secundaria</h1>
-            <p>
+            <p class="studies__card__title">Secundaria</p>
+            <p class="studies__card__description">
               Estudios secundarios bachiller en
               economía y administración -
               EESOPI 3180 Santa Rosa de
               Viterbo, San Lorenzo.
             </p>
-          </div>
-          <div class="study-card">
+          </article>
+          <article class="studies__card">
             <img src="./assets/svgs/2020.svg" alt="2020">
-            <h1>Facultad</h1>
-            <p>
+            <p class="studies__card__title">Facultad</p>
+            <p class="studies__card__description">
               Cursando la carrera de Licenciatura
               en Ciencias de la Computación -
               Facultad de Ciencias Exactas,
               Ingeniería y Agrimensura UNR,
               Rosario
             </p>
-          </div>
-          <div class="study-card">
+          </article>
+          <article class="studies__card">
             <img src="./assets/svgs/2021.svg" alt="2021">
-            <h1>Cursos</h1>
-            <p>
+            <p class="studies__card__title">Cursos</p>
+            <p class="studies__card__description">
               Curso de programación web full
               stack - Egg Educación junto a UNR,
               Polo tecnológico y el Ministerio de
               Trabajo, Empleo y Seguridad Social
               de la Nación
             </p>
-          </div>
+          </article>
         </div>
       </section>
-      <section id="habilities">
-        <h1 class="title">Mis habilidades</h1>
-        <div class="habilities-cards-extra">
-          <div class="habilitie-card">
-            <img src="./assets/svgs/Code-icon.svg" alt="code-icon" />
-            <h1>HTML, CSS y JS</h1>
-            <p>
+      <section class="habilities" id="habilities">
+        <h2 class="habilities__title">Mis habilidades</h2>
+        <div class="habilities__cards">
+          <div class="habilities__card">
+            <img loading="lazy" src="./assets/svgs/Code-icon.svg" alt="code-icon" />
+            <p class="habilities__card__title">HTML, CSS y JS</p>
+            <p class="habilities__card__description">
               Conocimiento y manejo avanzado de html, css, java y javascript
               para el desarrollo web.
             </p>
           </div>
-          <div class="habilitie-card">
-            <img src="./assets/svgs/Lang-icon.svg" alt="language-icon" />
-            <h1>Idiomas</h1>
-            <p>
+          <div class="habilities__card">
+            <img loading="lazy" src="./assets/svgs/Lang-icon.svg" alt="language-icon" />
+            <p class="habilities__card__title">Idiomas</p>
+            <p class="habilities__card__description">
               Mi lenguaje principal es el español, cuento con un nivel avanzado
               tanto de habla como escritura en inglés.
             </p>
           </div>
-          <div class="habilitie-card">
-            <img src="./assets/svgs/Team-icon.svg" alt="team-icon" />
-            <h1>Trabajo en equipo</h1>
-            <p>
+          <div class="habilities__card">
+            <img loading="lazy" src="./assets/svgs/Team-icon.svg" alt="team-icon" />
+            <p class="habilities__card__title">Trabajo en equipo</p>
+            <p class="habilities__card__description">
               Trato de ser un activo valioso en el equipo que esté trabajando,
               aportando mis conocimientos para optimizar el flujo de trabajo en
               el desarrollo del proyecto.
             </p>
           </div>
-          <div class="habilitie-card">
+          <div class="habilities__card">
             <img loading="lazy" src="./assets/svgs/React-icon.svg" alt="react-icon" />
-            <h1>React y Vue</h1>
-            <p>
+            <p class="habilities__card__title">React y Vue</p>
+            <p class="habilities__card__description">
               Conocimiento básico de los frameworks React y Vue (Componentes, Hooks, etc). Capacitandome para obtener un mejor nivel.
             </p>
           </div>
-          <div class="habilitie-card">
+          <div class="habilities__card">
             <img loading="lazy" src="./assets/svgs/Git-icon.svg" alt="git-icon" />
-            <h1>Git</h1>
-            <p>
+            <p class="habilities__card__title">Git</p>
+            <p class="habilities__card__description">
               Nivel básico sobre el software de control de versiones Git. Capacitandome para obtener un mejor nivel.
             </p>
           </div>
-          <div class="habilitie-card">
+          <div class="habilities__card">
             <img loading="lazy" src="./assets/svgs/Python-icon.svg" alt="python-icon" />
-            <h1>Python</h1>
-            <p>
+            <p class="habilities__card__title">Python</p>
+            <p class="habilities__card__description">
               Cognición y uso intermedio del lenguaje de programación Python.
             </p>
           </div>
         </div>
       </section>
-      <section id="projects">
-        <h1 class="title">Algunos de mis proyectos</h1>
-        <div class="image">
+      <section class="projects" id="projects">
+        <h2 class="projects__title">Algunos de mis proyectos</h2>
+        <div class="projects__image">
           <img src="./assets/pngs/Frame 1.png" alt="WeatherApp" />
-          <div class="image-overlay">
-            <h1>Weather App</h1>
-            <p>Una página web donde consultar el clima de la ciudad que desee, obteniendo una informacíon detallada del día y de la semana.</p>
-            <div class="secondary-btn"><a href="https://rodom-weatherapp.netlify.app/" target="_blank">Visitar sitio</a></div>
+          <div class="projects__image--overlay">
+            <p class="projects__image--overlay__title">Weather App</p>
+            <p class="projects__image--overlay__description">Una página web donde consultar el clima de la ciudad que desee.</p>
+            <div class="btn btn--secondary"><a href="https://rodom-weatherapp.netlify.app/" target="_blank">Visitar sitio</a></div>
           </div>
         </div>
-        <div class="image">
+        <div class="projects__image">
           <img src="./assets/pngs/Frame 2.png" alt="TipCalculatorApp" />
-          <div class="image-overlay">
-            <h1>Tip Calculator</h1>
-            <p>
+          <div class="projects__image--overlay">
+            <p class="projects__image--overlay__title">Tip Calculator</p>
+            <p class="projects__image--overlay__description">
               Calculadora de propina según el porcentaje y la cantidad de personas
             </p>
-            <div class="secondary-btn"><a href="https://rodom-tip-calculator.netlify.app/" target="_blank">Visitar sitio</a></div>
+            <div class="btn btn--secondary"><a href="https://rodom-tip-calculator.netlify.app/" target="_blank">Visitar sitio</a></div>
           </div>
         </div>
-        <div class="image">
+        <div class="projects__image">
           <img src="./assets/pngs/Frame 3.png" alt="IpAdressTracker" />
-          <div class="image-overlay">
-            <h1>Ip Address Tracker</h1>
-            <p>Localizador de Ip's</p>
-            <div class="secondary-btn"><a href="https://rodom-ip-address-tracker.netlify.app/" target="_blank">Visitar sitio</a></div>
+          <div class="projects__image--overlay">
+            <p class="projects__image--overlay__title">Ip Address Tracker</p>
+            <p class="projects__image--overlay__description">Localizador de Ip's junto a un mapa</p>
+            <div class="btn btn--secondary"><a href="https://rodom-ip-address-tracker.netlify.app/" target="_blank">Visitar sitio</a></div>
           </div>
         </div>
-        <div class="primary-btn">
+        <div class="btn btn--primary">
           <a href="https://github.com/RodoM?tab=repositories" target="_blank">Ver más</a
           ><img src="./assets/svgs/arrow-right.svg" alt="arrow-right" />
         </div>
       </section>
-      <section id="contact">
-        <div class="title-subtitle">
-          <h1 class="title">¡Contáctame!</h1>
-          <p class="subtitle">Si estás interesado en mi trabajo o tienes alguna inquietud, no dudes en escribirme!</p>
+      <section class="contact" id="contact">
+        <div class="contact__text">
+          <h1 class="contact__text__title">¡Contáctame!</h1>
+          <p class="contact__text__subtitle">Si estás interesado en mi trabajo o tienes alguna inquietud, no dudes en escribirme</p>
         </div>
         <form action="https://formsubmit.co/rodomeroi@gmail.com" method="POST">
           <label for="">Tu nombre</label>
@@ -239,24 +243,24 @@
           <button type="submit">Enviar</button>
         </form>
       </section>
-    </div>
-    <footer>
-      <div class="contenedor footer-content">
-        <div class="column">
-          <h1>Secciones</h1>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__content">
+        <div class="footer__column">
+          <p class="footer__column__title">Secciones</p>
           <a href="#home">Inicio</a>
           <a href="#about">Acerca de mi</a>
           <a href="#projects">Proyectos</a>
         </div>
-        <div class="column">
-          <h1>Contacto</h1>
+        <div class="footer__column">
+          <p class="footer__column__title">Contacto</p>
           <a href="#contact">Contáctame</a>
           <a href="mailto:rodomeroi@gmail.com">Correo</a>
           <a href="https://www.linkedin.com/in/rodolfo-meroi/" target="_blank">LinkedIn</a>
         </div>
-        <div class="column">
-          <h1>Social</h1>
-          <div class="social-media">
+        <div class="footer__column">
+          <p class="footer__column__title">Social</p>
+          <div class="footer__social-media">
             <a href="https://github.com/RodoM" target="_blank"><img src="./assets/svgs/github-icon.svg" alt="github" /></a>
             <a href="https://www.instagram.com/rodo.meroi/" target="_blank"><img src="./assets/svgs/instagram-icon.svg" alt="instagram" /></a>
           </div>

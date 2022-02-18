@@ -9,16 +9,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mensaje.css" />
+    <link rel="stylesheet" href="./css/mobile.css" media="(min-width: 320px) and (max-width: 768px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px) and (max-width: 1024px)">
     <link rel="icon" type="image/x-icon" href="/assets/svgs/favicon.svg" />
     <title>Mensaje enviado!</title>
   </head>
   <body>
-    <div id="mensaje">
-      <div class="message-card">
+    <section class="message" id="message">
+      <div class="message__card">
         <h1>Mensaje enviado con éxito</h1>
         <p>¡Gracias por contactarme!</p>
-        <div class="primary-btn"><img src="./assets/svgs/arrow-left.svg" alt="arrow-left" /><a href="index.html">Volver</a></div>
+        <div class="btn btn--primary"><img src="./assets/svgs/arrow-left.svg" alt="arrow-left" /><a href="index.html">Volver</a></div>
       </div>
     </div>
   </body>

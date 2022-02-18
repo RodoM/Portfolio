@@ -1,0 +1,99 @@
+.nav {
+  align-items: center;
+}
+
+.hero {
+  display: none;
+}
+
+main {
+  margin: 0 20px;
+}
+
+/* home section */
+.home__text h1 {
+  font-size: 2.125rem;
+  letter-spacing: 0.015625rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.home__text p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.009375rem;
+  text-align: center;
+  color: var(--blanco);
+}
+
+.home__buttons {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* about section */
+.about__card {
+  flex-direction: column;
+  width: 100%;
+}
+.about__card__title {
+  font-size: 2.125rem;
+  line-height: 2.5rem;
+}
+
+/* studies section */
+.studies__cards {
+  flex-direction: column;
+}
+.habilities__cards {
+  grid-template-rows: repeat(6, 320px);
+  grid-template-columns: repeat(1, 320px);
+}
+
+/* projects section */
+.projects {
+  gap: 25px;
+}
+.projects__title {
+  text-align: center;
+}
+
+.projects button > img {
+  width: 18px;
+}
+.projects__image--overlay {
+  border-radius: 6px;
+}
+.projects__image--overlay__title {
+  font-size: 1.2rem;
+}
+.projects__image--overlay__description {
+  font-size: .8rem;
+}
+
+/* contact section */
+.contact {
+  gap: 25px;
+}
+
+/* footer */
+footer {
+  padding: 1.5rem 0;
+  margin-top: 1rem;
+}
+
+.footer__content {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__column {
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.message__card h1 {
+  font-size: 2rem;
+  text-align: center;
+}

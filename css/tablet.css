@@ -1,0 +1,55 @@
+.hero {
+  display: grid;
+}
+
+main {
+  margin: 0 20px;
+}
+
+.hero img {
+  height: 8rem;
+}
+
+/* about section */
+.about__card {
+  flex-direction: row;
+}
+
+/* studies section */
+.studies__cards {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.habilities__cards {
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
+}
+
+.projects__image--overlay {
+  border-radius: 12px;
+}
+
+.projects__image--overlay__title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.projects__image--overlay__description {
+  font-size: 1rem;
+}
+
+/* contact section */
+.contact__text__subtitle {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* footer */
+.footer__content {
+  flex-direction: row;
+  gap: 10rem;
+}
+
+.message__card h1 {
+  font-size: 3rem;
+  text-align: center;
+}
