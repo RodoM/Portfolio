@@ -51,6 +51,26 @@ main {
   grid-template-columns: repeat(1, 320px);
 }
 
+.card1 {
+  animation-delay: 0s;
+}
+
+.card2 {
+  animation-delay: 0s;
+}
+
+.card3 {
+  animation-delay: 0s;
+}
+
+.card4 {
+  animation-delay: 0s;
+}
+
+.card5 {
+  animation-delay: 0s;
+}
+
 /* projects section */
 .projects {
   gap: 25px;

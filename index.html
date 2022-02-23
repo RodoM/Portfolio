@@ -15,6 +15,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/mobile.css" media="(min-width: 320px) and (max-width: 768px)">
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px) and (max-width: 1024px)">
@@ -67,7 +68,7 @@
     <main>
       <section class="home" id="home">
         <div class="home__content">
-          <div class="home__text">
+          <div class="home__text animate__animated animate__zoomIn">
             <h1>Soy <span>Rodolfo Meroi</span><br />Desarrollador Web</h1>
             <p>
               Este es mi portafolio, diseñado con HTML y CSS puro. Aquí puede
@@ -114,7 +115,7 @@
       <section class="studies" id="studies">
         <div class="studies__title">Mis estudios</div>
         <div class="studies__cards">
-          <article class="studies__card">
+          <article class="studies__card wow animate__animated animate__zoomIn">
             <img src="./assets/svgs/2018.svg" alt="2018">
             <p class="studies__card__title">Secundaria</p>
             <p class="studies__card__description">
@@ -124,7 +125,7 @@
               Viterbo, San Lorenzo.
             </p>
           </article>
-          <article class="studies__card">
+          <article class="studies__card wow animate__animated animate__zoomIn card1">
             <img src="./assets/svgs/2020.svg" alt="2020">
             <p class="studies__card__title">Facultad</p>
             <p class="studies__card__description">
@@ -135,7 +136,7 @@
               Rosario
             </p>
           </article>
-          <article class="studies__card">
+          <article class="studies__card wow animate__animated animate__zoomIn card2">
             <img src="./assets/svgs/2021.svg" alt="2021">
             <p class="studies__card__title">Cursos</p>
             <p class="studies__card__description">
@@ -151,7 +152,7 @@
       <section class="habilities" id="habilities">
         <h2 class="habilities__title">Mis habilidades</h2>
         <div class="habilities__cards">
-          <div class="habilities__card">
+          <div class="habilities__card wow animate__animated animate__zoomIn">
             <img loading="lazy" src="./assets/svgs/Code-icon.svg" alt="code-icon" />
             <p class="habilities__card__title">HTML, CSS y JS</p>
             <p class="habilities__card__description">
@@ -159,7 +160,7 @@
               para el desarrollo web.
             </p>
           </div>
-          <div class="habilities__card">
+          <div class="habilities__card wow animate__animated animate__zoomIn card1">
             <img loading="lazy" src="./assets/svgs/Lang-icon.svg" alt="language-icon" />
             <p class="habilities__card__title">Idiomas</p>
             <p class="habilities__card__description">
@@ -167,7 +168,7 @@
               tanto de habla como escritura en inglés.
             </p>
           </div>
-          <div class="habilities__card">
+          <div class="habilities__card wow animate__animated animate__zoomIn card2">
             <img loading="lazy" src="./assets/svgs/Team-icon.svg" alt="team-icon" />
             <p class="habilities__card__title">Trabajo en equipo</p>
             <p class="habilities__card__description">
@@ -176,21 +177,21 @@
               el desarrollo del proyecto.
             </p>
           </div>
-          <div class="habilities__card">
+          <div class="habilities__card wow animate__animated animate__zoomIn card3">
             <img loading="lazy" src="./assets/svgs/React-icon.svg" alt="react-icon" />
             <p class="habilities__card__title">React y Vue</p>
             <p class="habilities__card__description">
               Conocimiento básico de los frameworks React y Vue (Componentes, Hooks, etc). Capacitandome para obtener un mejor nivel.
             </p>
           </div>
-          <div class="habilities__card">
+          <div class="habilities__card wow animate__animated animate__zoomIn card4">
             <img loading="lazy" src="./assets/svgs/Git-icon.svg" alt="git-icon" />
             <p class="habilities__card__title">Git</p>
             <p class="habilities__card__description">
               Nivel básico sobre el software de control de versiones Git. Capacitandome para obtener un mejor nivel.
             </p>
           </div>
-          <div class="habilities__card">
+          <div class="habilities__card wow animate__animated animate__zoomIn card5">
             <img loading="lazy" src="./assets/svgs/Python-icon.svg" alt="python-icon" />
             <p class="habilities__card__title">Python</p>
             <p class="habilities__card__description">
@@ -201,7 +202,7 @@
       </section>
       <section class="projects" id="projects">
         <h2 class="projects__title">Algunos de mis proyectos</h2>
-        <div class="projects__image">
+        <div class="projects__image wow animate__animated animate__zoomIn">
           <img src="./assets/pngs/Frame 1.png" alt="WeatherApp" />
           <div class="projects__image--overlay">
             <p class="projects__image--overlay__title">Weather App</p>
@@ -209,7 +210,7 @@
             <div class="btn btn--secondary"><a href="https://rodom-weatherapp.netlify.app/" target="_blank">Visitar sitio</a></div>
           </div>
         </div>
-        <div class="projects__image">
+        <div class="projects__image wow animate__animated animate__zoomIn">
           <img src="./assets/pngs/Frame 2.png" alt="TipCalculatorApp" />
           <div class="projects__image--overlay">
             <p class="projects__image--overlay__title">Tip Calculator</p>
@@ -219,7 +220,7 @@
             <div class="btn btn--secondary"><a href="https://rodom-tip-calculator.netlify.app/" target="_blank">Visitar sitio</a></div>
           </div>
         </div>
-        <div class="projects__image">
+        <div class="projects__image wow animate__animated animate__zoomIn">
           <img src="./assets/pngs/Frame 3.png" alt="IpAdressTracker" />
           <div class="projects__image--overlay">
             <p class="projects__image--overlay__title">Ip Address Tracker</p>
@@ -278,5 +279,9 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./javascript/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

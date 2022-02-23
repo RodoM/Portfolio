@@ -25,6 +25,26 @@ main {
   grid-template-columns: repeat(2, auto);
 }
 
+.card1 {
+  animation-delay: .2s;
+}
+
+.card2 {
+  animation-delay: 0s;
+}
+
+.card3 {
+  animation-delay: .2s;
+}
+
+.card4 {
+  animation-delay: 0s;
+}
+
+.card5 {
+  animation-delay: .2s;
+}
+
 .projects__image--overlay {
   border-radius: 12px;
 }
